@@ -20,7 +20,7 @@ public class EmailGeneratorService {
     private String geminiApiKey;
 
     public EmailGeneratorService(WebClient.Builder webClientBuilder) {
-        this.webClient = WebClient.builder().build();
+        this.webClient = webClientBuilder.build();
     }
 
 
